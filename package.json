@@ -5,7 +5,8 @@
   "author": "Gulp Team <team@gulpjs.com> (https://gulpjs.com/)",
   "contributors": [
     "Blaine Bublitz <blaine.bublitz@gmail.com>",
-    "Tyler Kellen <tyler@sleekcode.net> (http://goingslowly.com/)"
+    "Tyler Kellen <tyler@sleekcode.net> (http://goingslowly.com/)",
+    "Even Stensberg <evenstensberg@gmail.com>"
   ],
   "repository": "gulpjs/interpret",
   "license": "MIT",
