@@ -106,7 +106,19 @@ var extensions = {
               only: [endsInBabelTs],
               presets: ['@babel/preset-env', '@babel/preset-typescript'],
             },
-          ],
+    
+'.esbuild.tsx', {
+    module: 'esbuild-kit/tsx',
+    register: function (hook, config) {
+        config = config || {
+            loader: 'tsx',
+            target: 'es2020',  // Adjust target if needed
+        };
+
+        hook(config);
+    },
+},
+      ],
         };
 
         hook(Object.assign({}, config, { extensions: '.ts' }));
