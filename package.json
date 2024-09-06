@@ -23,9 +23,11 @@
     "readme": "remark README.md --use ./scripts/plugin.mjs --output",
     "lint": "eslint .",
     "pretest": "npm run lint",
-    "test": "nyc mocha --async-only"
+    "test": "nyc mocha --async-only",
+    "build": "node -r ./register.js ./node_modules/.bin/webpack --mode=production"
   },
   "devDependencies": {
+    "esbuild-kit": "^0.10.0",
     "eslint": "^7.0.0",
     "eslint-config-gulp": "^5.0.0",
     "eslint-plugin-node": "^11.1.0",
@@ -37,7 +39,8 @@
     "rechoir": "^0.8.0",
     "remark-cli": "^10.0.1",
     "remark-code-import": "^1.1.0",
-    "shelljs": "0.8.5"
+    "shelljs": "0.8.5",
+    "tsx": "^4.19.0"
   },
   "nyc": {
     "extension": [
